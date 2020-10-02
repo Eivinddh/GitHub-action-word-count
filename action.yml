@@ -1,16 +1,13 @@
-# action.yml
-name: "Hello World"
-description: "Greet someone and record the time"
+name: "Word counter"
+description: "Word counter"
+author: "Eivind Dagsland Halderaker"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
-    required: true
-    default: "World"
+  file-extensions:
+    description: "Files to count"
+    default: "world"
 outputs:
-  time: # id of output
-    description: "The time we greeted you"
+  myOutput:
+    description: "Output from the action"
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.who-to-greet }}
