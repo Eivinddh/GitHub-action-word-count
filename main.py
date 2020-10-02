@@ -5,7 +5,7 @@ import requests  # noqa We are just importing this to prove the dependency insta
 def main():
     my_input = os.environ["INPUT_MYINPUT"]
 
-    my_output = f"Hello {my_input}"
+    my_output = f"File extensions to count: {my_input}"
 
     print(f"::set-output name=myOutput::{my_output}")
 
