@@ -1,4 +1,5 @@
 import os
+import sys
 import requests  # noqa We are just importing this to prove the dependency installed correctly
 
 
@@ -8,6 +9,7 @@ def main():
     my_output = f"File extensions to count: {my_input}"
 
     print(f"::set-output name=myOutput::{my_output}")
+    sys.exit(0)
 
 
 if __name__ == "__main__":
