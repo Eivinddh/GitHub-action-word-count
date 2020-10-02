@@ -2,7 +2,7 @@ name: "Word counter"
 description: "Word counter"
 author: "Eivind Dagsland Halderaker"
 inputs:
-  file-extensions:
+  fileExtensions:
     description: "Files to count"
     default: "world"
 outputs:
