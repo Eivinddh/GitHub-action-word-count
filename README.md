@@ -1,3 +1,3 @@
 # Word count GitHub action
 
-## Soon to come<sup>tm</sup>
+## Soon<sup>tm</sup> to come
