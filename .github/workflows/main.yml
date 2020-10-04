@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Count words in files
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -13,7 +13,6 @@ jobs:
         uses: ./ # Uses an action in the root directory
         id: counter
         with:
-          fileExtensions: "py"
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "Output was ${{ steps.counter.outputs.myOutput }}"
+          fileExtensions: ".py, .tex, .yml"
+      - name: Get number of words
+        run: echo "The number of words in spesified files was ${{ steps.counter.outputs.myOutput }}"

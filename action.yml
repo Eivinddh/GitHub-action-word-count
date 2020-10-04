@@ -3,8 +3,8 @@ description: "Word counter"
 author: "Eivind Dagsland Halderaker"
 inputs:
   fileExtensions:
-    description: "Files to count"
-    default: "world"
+    description: "Files extensions to count"
+    default: ".py .tex"
 outputs:
   myOutput:
     description: "Output from the action"
